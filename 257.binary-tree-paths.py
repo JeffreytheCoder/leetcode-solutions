@@ -13,7 +13,7 @@
 #         self.right = right
 
 # recursive
-# preorder traversal
+# preorder with backtrack
 #   backtrack push and pop node to path
 #   add to paths when reach leaf node
 class Solution:
@@ -44,7 +44,7 @@ class Solution:
 #   O(n) worst case if completed unbalanced (store entire tree in path)
             
 # iterative
-# post order: 
+# preorder with backtrack: 
 #   use stack to track node to traverse
 #   use paths stack to track all previous paths, and the path to current node as the top one in stack
     # can't simply push and pop node to a array like in recursion 

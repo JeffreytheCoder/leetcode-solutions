@@ -5,12 +5,16 @@
 #
 
 # @lc code=start
+
+# hashmap[1/5]
+
+# use hashmap to store last appearance of a char
+# track start idx of current nonrepeated substring
+# if encounter repeated character:
+#   update start idx to next char (next nonrepeated char)
+#   update max len (of nonrepeated substring)
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # use hashmap to store last appearance of a character
-        # track start idx of current nonrepeated substring
-        # if encounter repeated character, update start idx to behind the last appearance if larger
-
         last_idx = {}
         start = 0
         max_len = 0

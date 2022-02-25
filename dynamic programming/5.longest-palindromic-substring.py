@@ -5,10 +5,13 @@
 #
 
 # @lc code=start
+
+# iterative [2/5]
+# iterate char:
+#   inc left and dec right pointer to get largest palindrome which center is the current char
+# also find largest palindrome which center is pair with same char (current character with the right one)
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        # iterate char and search to left and right to get palindrome which center is the current char
-        # also search for pair (current character with the right one)
 
         def getPalindrome(s: str, left: int, right: int, start: int, max_len: int):
             while left >= 0 and right < len(s) and s[left] == s[right]:
@@ -33,14 +36,15 @@ class Solution:
 
         return s[start: start + max_len]
 
-    # O(n^2), space: O(1)
+# time: O(n^2)
+# space: O(1)
 
-
+# dp [4/5]
+# dp[i][j] is whether s[i:j+1] is palindrome
+# if s[i] == s[j] and (j-i < 2 (single or pair) or dp[i + 1][j - 1] (last character is palindrome)), dp[i][j]=true
+# iterate i reversely
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        # dp[i][j] is whether s[i:j+1] is palindrome
-        # if s[i] == s[j] and (j-i < 2 or dp[i + 1][j - 1]), dp[i][j]=true
-        # iterate i reversely
 
         dp = [[False for _ in range(len(s))] for _ in range(len(s))]
         max_len = 0
@@ -62,6 +66,7 @@ class Solution:
 
         return res
 
-    # O(n^2), space: O(n^2)
+# time: O(n^2)
+# space: O(n^2)
 
 # @lc code=end

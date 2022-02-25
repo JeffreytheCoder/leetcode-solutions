@@ -5,6 +5,12 @@
 #
 
 # @lc code=start
+
+# hashmap [1/5]
+# for each num in nums:
+#   store {num : idx} in hashmap
+#   if there is a key in hashmap as (target - num), it means two numbers adds up to target,
+#       return the idx of num and idx of the key in hashmap
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dict = {}
@@ -14,6 +20,9 @@ class Solution:
                 return [idx, dict[target - val]]
             else:
                 dict[val] = idx
+                
+# time: O(n)
+# space: O(n)
         
 # @lc code=end
 

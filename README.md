@@ -84,5 +84,4 @@ class Solution:
 </table>
 Each solution can be in more than one category
 
----
-Happy leetcode!
+### Happy leetcode!

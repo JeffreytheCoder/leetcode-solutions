@@ -1,21 +1,21 @@
 # leetcode-solutions
-My leetcode solutions in Python, updating ~10 problems per week:rocket:
+My leetcode solutions in Python, updating ~10 problems per week :rocket:
 
-### Solution format
+## Solution Format
 Each solution contains
 <ul>
   <li> category [difficulty out of 5] </li>
   <li> key: one to two important key concepts to understand the approach of this solution </li> 
   <li> solutions with different approaches, e.g. iterative & recursive </li>
-  <li> time & space complexity <li>
+  <li> time & space complexity </li>
 </ul>
 *difficulty is set by personal consideration, since I think the leetcode default easy/medium/hard difficulty for some problems is not accurate
 
-Example
+### Example
 ```
 # hashmap [1/5]
 
-# key: find value that adds up to target in a single loop, use hashmap to store {num in nums: its idx}
+# key: to find another value that adds up to target with current value in a single loop, use hashmap to store {num in nums: its idx}
 
 # for each (num, idx) in nums:
 #   if (target - num) is in hashmap, return idx and hashmap[target - num]
@@ -35,12 +35,16 @@ class Solution:
 # space: O(n)
 ```
 
-### Categories
+## Categories of Solutions
 <table>
   <thead>
     <th> Category </th>
     <th> # of problems </th>
   </thead>
+  <tr>
+    <td> Array </td>
+    <td> 1 </td>
+  </tr>
   <tr>
     <td> String </td>
     <td> 2 </td>

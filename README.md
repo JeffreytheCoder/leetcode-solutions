@@ -15,7 +15,8 @@ Each solution contains
 ```
 # hashmap [1/5]
 
-# key: to find another value that adds up to target with current value in a single loop, use hashmap to store {num in nums: its idx}
+# key: to achieve single loop, find another value that adds up to target with iterated value
+#   use hashmap to store {num in nums: its idx}
 
 # for each (num, idx) in nums:
 #   if (target - num) is in hashmap, return idx and hashmap[target - num]

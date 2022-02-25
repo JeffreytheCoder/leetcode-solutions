@@ -7,10 +7,14 @@
 # @lc code=start
 
 # hashmap [1/5]
-# for each num in nums:
-#   store {num : idx} in hashmap
-#   if there is a key in hashmap as (target - num), it means two numbers adds up to target,
-#       return the idx of num and idx of the key in hashmap
+
+# key: to achieve single loop, find another value that adds up to target with iterated value
+#   use hashmap to store {num in nums: its idx}
+
+# for each (num, idx) in nums:
+#   if (target - num) is in hashmap, return idx and hashmap[target - num]
+#   else store {num: idx} to hashmap
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dict = {}

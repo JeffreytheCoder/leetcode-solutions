@@ -6,10 +6,10 @@ Each solution contains
 <ul>
   <li> category [difficulty out of 5] </li>
   <li> key: one to two important key concepts to understand the approach of this solution </li> 
-  <li> solutions with different approaches, e.g. iterative & recursive </li>
+  <li> solution code with different approaches, e.g. iterative & recursive </li>
   <li> time & space complexity </li>
 </ul>
-*difficulty is set by personal consideration, since I think the leetcode default easy/medium/hard difficulty for some problems is not accurate
+*difficulty is set by personal consideration, since the default leetcode difficulty is not accurate for some problems
 
 ### Example
 ```
@@ -83,6 +83,6 @@ class Solution:
     <td> 1 </td>
   </tr>
 </table>
-Each solution can be in more than one category
+*Each solution can be in more than one category
 
 ### Happy leetcode!

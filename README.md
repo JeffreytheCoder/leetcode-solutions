@@ -64,11 +64,11 @@ class Solution:
   </tr>
   <tr>
     <td> Binary Tree </td>
-    <td> 18 </td>
+    <td> 20 </td>
   </tr>
   <tr>
     <td> Binary Search Tree </td>
-    <td> 0 </td>
+    <td> 6 </td>
   </tr>
   <tr>
     <td> Backtracking </td>
@@ -83,6 +83,5 @@ class Solution:
     <td> 1 </td>
   </tr>
 </table>
-*Each solution can be in more than one category
 
 ### Happy leetcode!
